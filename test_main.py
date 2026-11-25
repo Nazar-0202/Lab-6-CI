@@ -7,3 +7,4 @@ assert user.vozrast == 25
 def test_polzovatel_negative():
     with pytest.raises(Exception):
         Polzovatel(imya="Мехмет", vozrast="двадцать")
+# CI test tetikleyici
