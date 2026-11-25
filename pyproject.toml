@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "lab-5"
+version = "0.1.0"
+description = "Laboratornaya rabota 5 - avtomatizatsiya sborki"
+authors = ["Nazar Sabyrov <sabyrownazar16@gmail.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+loguru = "^0.7.2"
+pydantic = "^2.6.1"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.3.0"
+pytest = "^9.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
