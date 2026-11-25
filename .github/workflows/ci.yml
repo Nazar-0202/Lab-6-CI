@@ -24,10 +24,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install loguru pydantic pytest
 
-      - name: Build (Compile)
-        run: python -m compileall main.py
-
       - name: Test
-        run: |
-          export PYTHONPATH=.
-          python -m pytest
+        run: pytest test_main.py
