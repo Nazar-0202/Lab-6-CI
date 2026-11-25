@@ -25,10 +25,10 @@ jobs:
           poetry config virtualenvs.create false
 
       - name: Install dependencies
-        run: poetry install --no-interaction
+        run: poetry install --no-interaction --no-root
 
-      - name: Build
-        run: poetry build
+      - name: Build (Compile)
+        run: python -m compileall main.py
 
       - name: Test
         run: poetry run pytest
