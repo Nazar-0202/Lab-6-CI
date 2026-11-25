@@ -28,4 +28,4 @@ jobs:
         run: python -m compileall main.py
 
       - name: Test
-        run: pytest
+        run: python -m pytest
